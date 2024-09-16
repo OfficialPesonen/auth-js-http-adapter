@@ -1,0 +1,34 @@
+{
+  "name": "auth-js-http-adapter",
+  "description": "Unofficial HTTP adapter for Auth.js / NextAuth.js.",
+  "keywords": [
+    "auth.js",
+    "nextauth.js",
+    "adapter",
+    "http",
+    "edge"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Arttu Pesonen <me@arttupesonen.fi>",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@auth/core": "^0.35.0",
+    "next": "^14.2.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "prettier": "^3.3.3",
+    "tsup": "^8.2.4",
+    "typescript": "^5.6.2"
+  }
+}
