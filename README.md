@@ -15,16 +15,16 @@ npm install auth-js-http-adapter
 
 Create a file to the following path `app/api/auth/adapter/[function]/route.ts` and paste the following code:
 
-```ts filename="/app/api/auth/adapter/[function]/route.ts"
+```ts
 import { httpAdapterRouteHandlers } from "auth-js-http-adapter";
 
 // Replace Adapter with a real adapter (such as MongoDBAdapter)
 export const { POST } = httpAdapterRouteHandlers({ adapter: Adapter });
 ```
 
-Update your Auth.js configuration to use the HTTP adapter:
+Update your Auth.js configuration `auth.ts` to use the HTTP adapter:
 
-```ts filename="/auth.ts"
+```ts
 import NextAuth from "next-auth";
 import { HTTPAdapter } from "auth-js-http-adapter";
 
